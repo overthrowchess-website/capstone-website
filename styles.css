@@ -567,7 +567,7 @@ section {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 32px;
-  align-items: center;
+  align-items: start;
   border-radius: var(--radius-lg);
   padding: 32px;
   margin-bottom: 20px;
