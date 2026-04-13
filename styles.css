@@ -208,7 +208,8 @@ code {
 }
 
 .hero-sub h1.display {
-  margin-bottom: 85px;
+  font-size: clamp(32px, 5vw, 64px);
+  margin-bottom: 70px;
 }
 
 .eyebrow {
