@@ -201,6 +201,16 @@ code {
   max-width: 860px;
 }
 
+/* Shorter hero for subpages (tutorial, download, team) */
+.hero-sub {
+  min-height: auto;
+  padding: 80px 0 40px;
+}
+
+.hero-sub h1.display {
+  margin-bottom: 85px;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -878,6 +888,7 @@ footer {
   .download-grid { grid-template-columns: 1fr; }
 
   .hero { padding: 60px 0 40px; }
+  .hero-sub { padding: 60px 0 32px; }
 
   .team-row,
   .team-row.reverse {
@@ -905,6 +916,7 @@ footer {
   .screenshot-grid { grid-template-columns: 1fr; }
 
   .hero { padding: 40px 0 32px; }
+  .hero-sub { padding: 40px 0 24px; }
   .lede { font-size: 15px; }
 
   h1.display { font-size: clamp(36px, 9vw, 52px); }
