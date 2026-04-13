@@ -6,7 +6,7 @@
   <title>Overthrow Chess: About</title>
   <meta name="description" content="Overthrow Chess is a University of Utah capstone mobile chess app with online matchmaking, AI games, puzzle modes, and post-game review." />
   <link rel="icon" type="image/png" href="assets/appicon.png" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="nav">
@@ -42,48 +42,42 @@
       </div>
     </section>
 
-    <!-- Project Overview -->
-    <section>
+    <!-- Project Overview — Split-Screen Narrative -->
+    <section class="overview">
+      <div class="overview-split">
+        <!-- The Problem -->
+        <div class="split-panel split-problem">
+          <div class="split-content">
+            <h2 class="split-heading">The board was tilted in favor of profit.</h2>
+            <p class="split-sub">Paywalls for analysis. Clunky mobile play. Limited&nbsp;features.</p>
+          </div>
+        </div>
+
+        <!-- Vertical divider with knight icon -->
+        <div class="split-divider" aria-hidden="true">
+          <span class="divider-line"></span>
+          <span class="divider-icon">♞</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <!-- The Solution -->
+        <div class="split-panel split-solution">
+          <div class="split-content">
+            <h2 class="split-heading">We built the alternative.</h2>
+            <p class="split-sub">A unified, high-performance toolkit that stays out of your way and keeps the best features&nbsp;free.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="mission">
       <div class="container">
-        <div class="section-head">
-          <h2>Project Overview</h2>
-          <p>
-            Overthrow Chess is our University of Utah capstone project, a React Native mobile app
-            that unifies the core chess workflow: queue, play, review, improve.
+        <div class="mission-block">
+          <span class="mission-eyebrow">Our Mission</span>
+          <p class="mission-text">
+            Overthrow Chess was born from a simple realization: the current landscape of online digital chess is fragmented. Major platforms gatekeep essential post-game analysis and other great features behind expensive subscriptions, and open-source alternatives struggle with outdated, friction-heavy interfaces. We built Overthrow to bridge this gap. By unifying feature-rich online chess play, full social features, and professional-grade Stockfish analysis with a modern, mobile-first experience, we've created a platform where the best tools for learning and playing are free, open, and intuitive. 
           </p>
-        </div>
-
-        <div class="prose">
-          <p>
-            The final state of this app covers online matchmaking with multiple time settings, AI opponents at two
-            difficulty levels, a friends system with the ability to challenge, in-game text chat and voice chat, puzzle
-            training modes, board and avatar customization, and a move-by-move game analysis tool.
-          </p>
-          <p>
-            The app uses a React Native + Expo client talking to a Go backend. Real-time games sync using WebSockets,
-            session coordination runs through Redis, and persistent data lives in PostgreSQL.
-          </p>
-        </div>
-
-        <div class="intro-grid">
-          <article class="info-card">
-            <h3>Problem</h3>
-            <p>
-              The two biggest chess apps either lock features behind a paywall or ship a rough mobile experience.
-              Casual players have nowhere to go.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Solution</h3>
-            <p>
-              Overthrow Chess gives casual players a clean, free mobile experience with online play, social challenges,
-              puzzles, and post-game analysis, all in one place.
-            </p>
-          </article>
-        </div>
-
-        <div class="diagram-card">
-          <img src="assets/architecture.svg?v=2" alt="System architecture diagram showing mobile clients, Go API/game server, Redis, PostgreSQL, and real-time services" />
         </div>
       </div>
     </section>
@@ -191,6 +185,10 @@
           <span class="chip">WebRTC + coturn</span>
           <span class="chip">Stockfish</span>
         </div>
+        <div class="diagram-card">
+          <img src="assets/architecture.svg?v=2" alt="System architecture diagram showing mobile clients, Go API/game server, Redis, PostgreSQL, and real-time services" />
+        </div>
+      </div>
       </div>
     </section>
   </main>
