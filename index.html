@@ -6,7 +6,7 @@
   <title>Overthrow Chess: About</title>
   <meta name="description" content="Overthrow Chess is a University of Utah capstone mobile chess app with online matchmaking, AI games, puzzle modes, and post-game review." />
   <link rel="icon" type="image/png" href="assets/appicon.png" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
@@ -55,15 +55,13 @@
 
         <div class="prose">
           <p>
-            The current build covers online matchmaking with configurable time controls, AI opponents at two difficulty
-            levels, a friends system with challenge flows, in-game text chat, puzzle training (Puzzle Rush and Random
-            Puzzle), board and theme customization, and a move-by-move post-game review screen with analysis data. Several
-            screens also exist for upcoming work, including variant game modes, daily games, and additional puzzle submodes.
+            The final state of this app covers online matchmaking with multiple time settings, AI opponents at two
+            difficulty levels, a friends system with the ability to challenge, in-game text chat and voice chat, puzzle
+            training modes, board and avatar customization, and a move-by-move game analysis tool.
           </p>
           <p>
-            The app uses a React Native + Expo client talking to a Go backend. Real-time games sync over WebSockets,
-            session coordination runs through Redis, and persistent data lives in PostgreSQL. Voice chat signaling
-            infrastructure is in place, though availability is device- and build-dependent.
+            The app uses a React Native + Expo client talking to a Go backend. Real-time games sync using WebSockets,
+            session coordination runs through Redis, and persistent data lives in PostgreSQL.
           </p>
         </div>
 
@@ -71,25 +69,21 @@
           <article class="info-card">
             <h3>Problem</h3>
             <p>
-              On mobile, chess workflows are fragmented. Queueing, gameplay, and review often live in separate tools
-              or feel disconnected within the same app.
+              The two biggest chess apps either lock features behind a paywall or ship a rough mobile experience.
+              Casual players have nowhere to go.
             </p>
           </article>
           <article class="info-card">
             <h3>Solution</h3>
             <p>
-              Overthrow Chess unifies these steps in a single native app, with implemented features prioritized around
-              online play, social challenges, puzzles, and post-game analysis.
+              Overthrow Chess gives casual players a clean, free mobile experience with online play, social challenges,
+              puzzles, and post-game analysis, all in one place.
             </p>
           </article>
         </div>
 
         <div class="diagram-card">
           <img src="assets/architecture.svg?v=2" alt="System architecture diagram showing mobile clients, Go API/game server, Redis, PostgreSQL, and real-time services" />
-          <p class="caption">
-            High-level architecture: mobile clients connect to a Go API and game server, backed by Redis for session state
-            and PostgreSQL for persistence, with Stockfish-powered analysis and WebRTC signaling via coturn.
-          </p>
         </div>
       </div>
     </section>
@@ -99,7 +93,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Core Capabilities</h2>
-          <p>Features present and functional in the current capstone build.</p>
+          <p>Features present and functional in the final capstone build.</p>
         </div>
 
         <div class="features">
@@ -135,12 +129,6 @@
           </div>
         </div>
 
-        <ul class="checklist" style="margin-top: 32px;">
-          <li><strong>Implemented now:</strong> Auth, online queue, AI games, friends/challenges, game chat, stats, puzzle rush/random, board customization, Chess960 support</li>
-          <li><strong>Implemented now:</strong> Review screen with analysis for completed online games, leaderboard support per mode</li>
-          <li><strong>In progress:</strong> Most alternate game modes (4-player, fog of war, etc.), shown as coming soon</li>
-          <li><strong>In progress:</strong> Daily time controls and several puzzle submodes marked under construction</li>
-        </ul>
       </div>
     </section>
 
@@ -149,7 +137,7 @@
       <div class="container">
         <div class="section-head">
           <h2>App Screenshots</h2>
-          <p>Actual captures from the current build, no mockups.</p>
+          <p>Actual captures from the final build.</p>
         </div>
 
         <div class="screenshot-grid">
@@ -196,6 +184,7 @@
           <span class="chip">Go</span>
           <span class="chip">WebSockets</span>
           <span class="chip">PostgreSQL</span>
+          <div class="chip-break"></div>
           <span class="chip">Redis</span>
           <span class="chip">Docker</span>
           <span class="chip">Nginx</span>

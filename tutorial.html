@@ -6,7 +6,7 @@
   <title>Overthrow Chess: User Tutorial</title>
   <meta name="description" content="Quick-start tutorial for installing Overthrow Chess, playing a match, and reviewing implemented features." />
   <link rel="icon" type="image/png" href="assets/appicon.png" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
@@ -29,10 +29,10 @@
   <main>
     <section class="hero" style="padding-bottom: 20px;">
       <div class="container">
-        <h1 class="display">From install to<br /><span class="accent">first analysis</span></h1>
+        <h1 class="display">From install to<br /><span class="accent">Checkmate</span></h1>
         <p class="lede">
-          A quick-start guide for Demo Day reviewers and first-time users. Follow these steps to install
-          the app, play a match, and explore what's currently available.
+          A quick-start guide for Demo Day reviewers and first-time users.<br />
+          Follow these steps to install the app, play a match, and explore what's available.
         </p>
       </div>
     </section>
@@ -50,8 +50,7 @@
             <div class="accordion-body">
               <div class="accordion-content">
                 Install TestFlight from the App Store, then tap "Install via TestFlight" on the <a href="download.html" style="color: var(--accent); text-decoration: underline;">Download page</a>.
-                Follow the prompts to install Overthrow Chess on your iPhone. On first launch, allow network access
-                so matchmaking and account services can connect.
+                Follow the prompts to install Overthrow Chess on your iPhone.
               </div>
             </div>
           </div>
@@ -64,8 +63,7 @@
             </button>
             <div class="accordion-body">
               <div class="accordion-content">
-                Sign up using the in-app authentication flow and choose a player name. This name is used in matches, stats,
-                and leaderboard views. If you already have credentials from a previous session, use sign-in instead.
+                Sign up using the in-app authentication flow to access our services. There is support for Sign-in with Apple to speed this process up and protect your privacy.
               </div>
             </div>
           </div>
@@ -73,14 +71,13 @@
           <div class="accordion-item" role="listitem">
             <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
               <span class="step-num">3</span>
-              <span>Start an online or AI game</span>
+              <span>Queue into an online match or AI game</span>
               <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
             </button>
             <div class="accordion-body">
               <div class="accordion-content">
                 From the lobby, choose <strong>Play Online</strong> for matchmaking or <strong>Play AI</strong> for a bot
-                game. Time controls are grouped into bullet, blitz, and rapid options. Tap Play to enter the queue. When
-                paired, the board opens automatically. Daily time controls are visible but currently marked as coming soon.
+                opponent. Time settings are grouped into bullet, blitz, and rapid options. When paired, the board is populated and you are free to make your move.
               </div>
             </div>
           </div>
@@ -88,14 +85,12 @@
           <div class="accordion-item" role="listitem">
             <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
               <span class="step-num">4</span>
-              <span>Use the friends and challenge flow</span>
+              <span>Make friends and challenge them</span>
               <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
             </button>
             <div class="accordion-body">
               <div class="accordion-content">
-                Open the Friends tab to send friend requests. Once connected, you can challenge a friend directly instead of
-                using public matchmaking. This is useful for reviewers testing with a teammate. In-game text chat is available
-                during matches, and voice chat controls appear when supported by your build and device.
+                Navigate to the Friends tab to send friend requests. Once accepted, you can challenge them directly instead of using the public matchmaking queue.
               </div>
             </div>
           </div>
@@ -103,14 +98,12 @@
           <div class="accordion-item" role="listitem">
             <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
               <span class="step-num">5</span>
-              <span>Complete a game and open post-game review</span>
+              <span>Finish a match and open post-game analysis</span>
               <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
             </button>
             <div class="accordion-body">
               <div class="accordion-content">
-                Play a full game using drag or tap controls. After the game ends, the result overlay appears. From there,
-                open the review screen to replay moves step-by-step with analysis data overlaid on the board. This feature
-                is available for completed online games.
+                Play a full match. After the game ends, the result overlay appears. From here, you can open the review screen to replay moves step-by-step with analysis data provided from our servers.
               </div>
             </div>
           </div>
@@ -123,30 +116,14 @@
             </button>
             <div class="accordion-body">
               <div class="accordion-content">
-                Visit the <strong>Stats</strong> tab to see recent matches, rating trends, and mode-specific filters.
-                Leaderboard cards appear for modes where you have completed games. Then try <strong>Puzzle Rush</strong>
-                or <strong>Random Puzzle</strong> for tactics training. Some additional puzzle flows are present but marked
-                under construction.
+                Visit the Stats tab to see all of your recent matches, updated ratings, and mode-specific filters. Check out your status on the leaderboards too! Then try Puzzle Rush for tactics training.
               </div>
             </div>
           </div>
 
         </div>
 
-        <!-- Current Limitations -->
-        <div class="callout" style="margin-top: 48px;">
-          <h3>Current Limitations</h3>
-          <ul>
-            <li>Daily time controls are displayed in the UI but marked as coming soon and are not yet playable.</li>
-            <li>Most alternate game modes (4-player, fog of war, etc.) are shown on the Game Modes screen but labeled coming soon.</li>
-            <li>Several puzzle submodes are present but marked under construction.</li>
-            <li>Voice chat signaling infrastructure is in place, but availability depends on device and build and is not guaranteed on all devices.</li>
-            <li>If matchmaking appears slow, verify your network connection and retry queue entry.</li>
-            <li>If TestFlight shows the build as unavailable, try reinstalling via the link on the Download page.</li>
-          </ul>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px;">
+<div style="text-align: center; margin-top: 40px;">
           <a class="btn primary" href="download.html">Go to download page</a>
         </div>
       </div>
