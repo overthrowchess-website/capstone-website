@@ -389,6 +389,24 @@ section {
 }
 
 /* ========================================
+   Overview section transition
+   ======================================== */
+.overview {
+  position: relative;
+}
+
+.overview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(600px, 80%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-hover), transparent);
+}
+
+/* ========================================
    Info / Problem-Solution cards
    ======================================== */
 .intro-grid {
