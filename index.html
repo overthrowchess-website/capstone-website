@@ -6,7 +6,7 @@
   <title>Overthrow Chess: About</title>
   <meta name="description" content="Overthrow Chess is a University of Utah capstone mobile chess app with online matchmaking, AI games, puzzle modes, and post-game review." />
   <link rel="icon" type="image/png" href="assets/appicon.png" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="nav">
@@ -42,37 +42,40 @@
       </div>
     </section>
 
-    <!-- Project Overview -->
+    <!-- Project Overview — Split-Screen Narrative -->
     <section class="overview">
       <div class="container">
-        <div class="section-head">
-          <h2>Project Overview</h2>
-          <p>
-            Overthrow Chess is our University of Utah capstone project, a React Native mobile app
-            that unifies the core chess workflow: queue, play, review, improve.
-          </p>
+        <div class="overview-eyebrow">[ University of Utah Capstone 2026 ]</div>
+      </div>
+
+      <div class="overview-split">
+        <!-- The Problem -->
+        <div class="split-panel split-problem">
+          <div class="split-content">
+            <h2 class="split-heading">The board was tilted in favor of profit.</h2>
+            <p class="split-sub">Paywalls for analysis. Clunky mobile play. Limited&nbsp;features.</p>
+          </div>
         </div>
 
-        <div class="intro-grid">
-          <article class="info-card">
-            <h3>Problem</h3>
-            <p>
-              The two biggest chess apps either lock features behind a paywall or ship a rough mobile experience.
-              Casual players have nowhere to go.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Solution</h3>
-            <p>
-              Overthrow Chess gives casual players a clean, free mobile experience with online play, social challenges,
-              puzzles, and post-game analysis, all in one place.
-            </p>
-          </article>
+        <!-- Vertical divider with knight icon -->
+        <div class="split-divider" aria-hidden="true">
+          <span class="divider-line"></span>
+          <span class="divider-icon">♞</span>
+          <span class="divider-line"></span>
         </div>
+
+        <!-- The Solution -->
+        <div class="split-panel split-solution">
+          <div class="split-content">
+            <h2 class="split-heading">We built the alternative.</h2>
+            <p class="split-sub">A unified, high-performance toolkit that stays out of your way and keeps the best features&nbsp;free.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Core Capabilities -->
-    <section style="padding-top: 0;">
+    <section>
       <div class="container">
         <div class="section-head">
           <h2>Core Capabilities</h2>
