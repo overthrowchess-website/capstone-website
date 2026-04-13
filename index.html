@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overthrow Chess: About</title>
+  <meta name="description" content="Overthrow Chess is a University of Utah capstone mobile chess app with online matchmaking, AI games, puzzle modes, and post-game review." />
+  <link rel="icon" type="image/png" href="assets/appicon.png" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Overthrow Chess home">
+        <img src="assets/appicon.png" alt="" width="22" height="22" />
+        <span>Overthrow Chess</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">About</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="team.html">Team</a>
+        <a href="download.html">Download</a>
+      </nav>
+      <a class="nav-cta" href="download.html">Get the app</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <img class="hero-icon" src="assets/appicon.png" alt="Overthrow Chess app icon" width="92" height="92" />
+        <h1 class="display">Overthrow<br /><span class="accent">Chess</span></h1>
+        <p class="lede">
+          A modern mobile chess app with online matches, AI opponents, and<br />post-game analysis that fits how you already play.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="download.html">Download</a>
+          <a class="btn" href="tutorial.html">Read the tutorial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Project Overview</h2>
+          <p>
+            Overthrow Chess is our University of Utah capstone project, a React Native mobile app
+            that unifies the core chess workflow: queue, play, review, improve.
+          </p>
+        </div>
+
+        <div class="prose">
+          <p>
+            The current build covers online matchmaking with configurable time controls, AI opponents at two difficulty
+            levels, a friends system with challenge flows, in-game text chat, puzzle training (Puzzle Rush and Random
+            Puzzle), board and theme customization, and a move-by-move post-game review screen with analysis data. Several
+            screens also exist for upcoming work, including variant game modes, daily games, and additional puzzle submodes.
+          </p>
+          <p>
+            The app uses a React Native + Expo client talking to a Go backend. Real-time games sync over WebSockets,
+            session coordination runs through Redis, and persistent data lives in PostgreSQL. Voice chat signaling
+            infrastructure is in place, though availability is device- and build-dependent.
+          </p>
+        </div>
+
+        <div class="intro-grid">
+          <article class="info-card">
+            <h3>Problem</h3>
+            <p>
+              On mobile, chess workflows are fragmented. Queueing, gameplay, and review often live in separate tools
+              or feel disconnected within the same app.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Solution</h3>
+            <p>
+              Overthrow Chess unifies these steps in a single native app, with implemented features prioritized around
+              online play, social challenges, puzzles, and post-game analysis.
+            </p>
+          </article>
+        </div>
+
+        <div class="diagram-card">
+          <img src="assets/architecture.svg?v=2" alt="System architecture diagram showing mobile clients, Go API/game server, Redis, PostgreSQL, and real-time services" />
+          <p class="caption">
+            High-level architecture: mobile clients connect to a Go API and game server, backed by Redis for session state
+            and PostgreSQL for persistence, with Stockfish-powered analysis and WebRTC signaling via coturn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Core Capabilities</h2>
+          <p>Features present and functional in the current capstone build.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="icon">♟</div>
+            <h3>Online Matchmaking</h3>
+            <p>Queue for live games with selectable time controls (bullet, blitz, rapid) and Chess960-specific queueing paths.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <h3>Real-Time Sync</h3>
+            <p>WebSocket state updates with optimistic UI keep move latency low and gameplay responsive across devices.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🤖</div>
+            <h3>Play vs. AI</h3>
+            <p>Challenge Stockfish-powered bots at easy or hard difficulty for practice without waiting for a match.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">📊</div>
+            <h3>Post-Game Review</h3>
+            <p>Replay completed online games move-by-move with analysis data overlaid on the board.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">👥</div>
+            <h3>Social Play</h3>
+            <p>Friends system with requests, direct challenge flows, in-game text chat, and voice chat signaling (device-dependent).</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🧩</div>
+            <h3>Puzzle Training</h3>
+            <p>Puzzle Rush and Random Puzzle modes are fully playable; additional puzzle flows are present but under construction.</p>
+          </div>
+        </div>
+
+        <ul class="checklist" style="margin-top: 32px;">
+          <li><strong>Implemented now:</strong> Auth, online queue, AI games, friends/challenges, game chat, stats, puzzle rush/random, board customization, Chess960 support</li>
+          <li><strong>Implemented now:</strong> Review screen with analysis for completed online games, leaderboard support per mode</li>
+          <li><strong>In progress:</strong> Most alternate game modes (4-player, fog of war, etc.), shown as coming soon</li>
+          <li><strong>In progress:</strong> Daily time controls and several puzzle submodes marked under construction</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="section-head">
+          <h2>App Screenshots</h2>
+          <p>Actual captures from the current build, no mockups.</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-01.png" alt="Home screen lobby showing mode selection and queue options" />
+            <h3>Home / Lobby</h3>
+            <p>Primary entry point for queueing, mode selection, and match navigation.</p>
+          </div>
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-02.png" alt="Board customization screen with theme options" />
+            <h3>Board Customization</h3>
+            <p>Theme and board appearance controls for personalizing the gameplay experience.</p>
+          </div>
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-03.png" alt="Stats dashboard showing ratings and performance data" />
+            <h3>Stats Dashboard</h3>
+            <p>Ratings and performance overview across supported time controls.</p>
+          </div>
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-04.png" alt="Friends screen showing social features" />
+            <h3>Friends</h3>
+            <p>Social hub for friend requests, activity, and direct match challenges.</p>
+          </div>
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-05.png" alt="In-game board view with clocks and controls" />
+            <h3>In-Game View</h3>
+            <p>Live board with clocks, legal move interaction, and match controls.</p>
+          </div>
+          <div class="shot-card">
+            <img src="assets/screenshots/app-screen-06.png" alt="Puzzle mode interface" />
+            <h3>Puzzles</h3>
+            <p>Tactics training for pattern recognition and skill improvement.</p>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top: 64px; margin-bottom: 24px;">
+          <h2>Technology Stack</h2>
+          <p>Frameworks and services powering the current implementation.</p>
+        </div>
+        <div class="tech">
+          <span class="chip">React Native</span>
+          <span class="chip">Expo</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Go</span>
+          <span class="chip">WebSockets</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Redis</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Nginx</span>
+          <span class="chip">WebRTC + coturn</span>
+          <span class="chip">Stockfish</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Overthrow Chess · University of Utah Capstone</div>
+      <div class="links">
+        <a href="index.html">About</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="team.html">Team</a>
+        <a href="download.html">Download</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overthrow Chess: Download</title>
+  <meta name="description" content="Download the Overthrow Chess Android APK and access project resources for Demo Day review." />
+  <link rel="icon" type="image/png" href="assets/appicon.png" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Overthrow Chess home">
+        <img src="assets/appicon.png" alt="" width="22" height="22" />
+        <span>Overthrow Chess</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">About</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="team.html">Team</a>
+        <a class="active" href="download.html">Download</a>
+      </nav>
+      <a class="nav-cta" href="#downloads">Get the app</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 20px;">
+      <div class="container">
+        <h1 class="display">Download<br /><span class="accent">Overthrow Chess</span></h1>
+        <p class="lede">
+          Overthrow Chess is an iPhone app distributed via TestFlight. Install it on your iPhone
+          to play, or use the Android APK if you don't have an iOS device.
+        </p>
+      </div>
+    </section>
+
+    <section id="downloads" style="padding-top: 20px;">
+      <div class="container">
+        <div class="download-grid">
+          <article class="dl-card">
+            <div class="platform-icon">🍎</div>
+            <h3>iOS via TestFlight</h3>
+            <p>Install on your iPhone using Apple's TestFlight app. Tap the button below to get started.</p>
+            <a class="btn primary" href="#" onclick="return false;">Install via TestFlight</a>
+            <div class="meta">Requires iPhone · iOS 16.0+ · TestFlight app required</div>
+          </article>
+
+          <article class="dl-card">
+            <div class="platform-icon">🤖</div>
+            <h3>Android APK</h3>
+            <p>Direct APK download for Android reviewers who don't have an iOS device.</p>
+            <a class="btn" href="../frontend/android-builds/overthrowchess.apk" download>Download APK</a>
+            <div class="meta">Android APK · v1.0 · Requires Android 9.0+</div>
+          </article>
+        </div>
+
+        <div class="download-grid" style="margin-top: 20px;">
+          <article class="dl-card">
+            <div class="platform-icon">💻</div>
+            <h3>Source Repository</h3>
+            <p>Browse the full codebase: mobile client, Go backend, infrastructure, and analysis pipeline.</p>
+            <a class="btn" href="https://capstone.cs.utah.edu/overthrowchess/overthrowchess.git" target="_blank" rel="noreferrer">Open GitLab Project</a>
+          </article>
+
+          <article class="dl-card">
+            <div class="platform-icon">📖</div>
+            <h3>Reviewer Quick Start</h3>
+            <p>See the Tutorial page for first-run steps and current limitations, then Team for direct contact info.</p>
+            <a class="btn" href="tutorial.html">Open Tutorial</a>
+          </article>
+        </div>
+
+        <div class="section-head" style="margin-top: 72px;">
+          <h2>System Requirements</h2>
+          <p>What you need to test the current build.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <div class="icon">📱</div>
+            <h3>iPhone</h3>
+            <p>iOS 16.0 or newer. Install TestFlight from the App Store, then tap the install button above.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🌐</div>
+            <h3>Internet Connection</h3>
+            <p>Required for account login, online matchmaking, and synchronized multiplayer gameplay.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🎧</div>
+            <h3>Optional: Microphone</h3>
+            <p>Enable mic permissions only if testing voice controls. Availability depends on device and build support.</p>
+          </article>
+        </div>
+
+        <div class="section-head" style="margin-top: 72px; margin-bottom: 24px;">
+          <h2>Installation Steps</h2>
+        </div>
+        <ul class="checklist">
+          <li>Install TestFlight from the App Store if you don't have it</li>
+          <li>Tap "Install via TestFlight" above to open the install page</li>
+          <li>Launch the app, create an account or sign in</li>
+          <li>Play a match from the main queue to verify connectivity</li>
+          <li>Open post-game analysis from the result screen</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Overthrow Chess · University of Utah Capstone</div>
+      <div class="links">
+        <a href="index.html">About</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="team.html">Team</a>
+        <a href="download.html">Download</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

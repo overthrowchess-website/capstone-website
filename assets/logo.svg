@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Overthrow Chess logo">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9e40"/>
+      <stop offset="100%" stop-color="#ff6d00"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="232" height="232" rx="56" fill="#111217"/>
+  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#g1)" fill-opacity="0.14"/>
+  <path d="M163 190h-70c0-21 16-31 32-39-11-7-18-18-18-31 0-22 18-39 40-39 10 0 19 3 27 9l-12 14c-4-2-9-4-15-4-13 0-23 9-23 22 0 12 8 21 23 25l14 4-5 13c-2 4-3 8-3 12h10z" fill="#fff"/>
+  <circle cx="116" cy="77" r="10" fill="#fff"/>
+</svg>
