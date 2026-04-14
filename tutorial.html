@@ -37,120 +37,56 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="accordion" role="list">
-
-          <div class="accordion-item open" role="listitem">
-            <button class="accordion-trigger" aria-expanded="true" onclick="toggleAccordion(this)">
-              <span class="step-num">1</span>
-              <span>Install the app</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                Install TestFlight from the App Store, then tap "Install via TestFlight" on the <a href="download.html" style="color: var(--accent); text-decoration: underline;">Download page</a>.
-                Follow the prompts to install Overthrow Chess on your iPhone.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item" role="listitem">
-            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-              <span class="step-num">2</span>
-              <span>Create or sign in to your account</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                Sign up using the in-app authentication flow to access our services. There is support for Sign-in with Apple to speed this process up and protect your privacy.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item" role="listitem">
-            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-              <span class="step-num">3</span>
-              <span>Queue into an online match or AI game</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                From the lobby, choose <strong>Play Online</strong> for matchmaking or <strong>Play AI</strong> for a bot
-                opponent. Time settings are grouped into bullet, blitz, and rapid options. When paired, the board is populated and you are free to make your move.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item" role="listitem">
-            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-              <span class="step-num">4</span>
-              <span>Make friends and challenge them</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                Navigate to the Friends tab to send friend requests. Once accepted, you can challenge them directly instead of using the public matchmaking queue.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item" role="listitem">
-            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-              <span class="step-num">5</span>
-              <span>Finish a match and open post-game analysis</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                Play a full match. After the game ends, the result overlay appears. From here, you can open the review screen to replay moves step-by-step with analysis data provided from our servers.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item" role="listitem">
-            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-              <span class="step-num">6</span>
-              <span>Explore stats and puzzle modes</span>
-              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                Visit the Stats tab to see all of your recent matches, updated ratings, and mode-specific filters. Check out your status on the leaderboards too! Then try Puzzle Rush for tactics training.
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-<div style="text-align: center; margin-top: 40px;">
-          <a class="btn primary" href="download.html">Go to download page</a>
-        </div>
-      </div>
-    </section>
 
     <section class="tut-deep-dive">
       <div class="container">
-        <div class="section-head">
-          <h2>Feature Walkthrough</h2>
-          <p>A closer look at every screen and feature in Overthrow Chess.</p>
-        </div>
-
         <div class="tut-controls">
           <button class="btn tut-toggle-all" onclick="toggleAllTut(this)">Expand All</button>
         </div>
 
         <div class="tut-accordion" role="list">
 
-          <!-- 1. App Start -->
+          <!-- Install -->
           <div class="tut-accordion-item open" role="listitem">
             <button class="tut-trigger" aria-expanded="true" onclick="toggleTut(this)">
+              <span>Install</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </button>
+            <div class="tut-body">
+              <div class="tut-content">
+                <p>Overthrow Chess is available on iOS via TestFlight and on Android as a direct APK download.</p>
+
+                <div class="download-grid" style="margin-top: 20px;">
+                  <article class="dl-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3>iOS via TestFlight</h3>
+                    <p>Install TestFlight first, then use the invite link to add Overthrow Chess.<br />Requires iOS 16.0+.</p>
+                    <a class="btn primary" href="https://apps.apple.com/us/app/testflight/id899247664" target="_blank" rel="noreferrer">Install TestFlight</a>
+                    <div class="meta" style="margin-top: 12px;">Then go to <a href="download.html">Downloads</a> and tap <strong>Install via TestFlight</strong></div>
+                  </article>
+
+                  <article class="dl-card">
+                    <div class="platform-icon">🤖</div>
+                    <h3>Android APK</h3>
+                    <p>Download the APK directly and sideload it. You may need to enable <em>Install unknown apps</em> in Settings first.<br />Requires Android 9.0+.</p>
+                    <a class="btn" href="download.html">Download APK</a>
+                    <div class="meta" style="margin-top: 12px;">A security prompt is expected — you can disable the setting again after install.</div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1. App Start -->
+          <div class="tut-accordion-item" role="listitem">
+            <button class="tut-trigger" aria-expanded="false" onclick="toggleTut(this)">
               <span>App Start</span>
               <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
             </button>
             <div class="tut-body">
               <div class="tut-content">
                 <p>This is the first page you'll see when you open Overthrow Chess. You can sign in with your email and password, use Sign in with Apple for a quick start on iOS, or create a new account. Signing up just takes a name, email, and password — and you'll be ready to play in seconds.</p>
+                <aside class="tut-note"></aside>
                 <div class="tut-img-row">
                   <img src="assets/tutorial-pics/signin.PNG" alt="Sign in screen" />
                   <img src="assets/tutorial-pics/signup.PNG" alt="Sign up screen" />
@@ -159,6 +95,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Home Screen</h4>
                   <p>This is your home screen and the portal to the rest of the app. From here you can jump into four main activities: Play Online to match against other players, Play AI to practice against the computer, Puzzles to sharpen your tactics, and Game Modes for alternative ways to play. You can also find customization options. In the middle of the screen, you can change the color of your board, and if you click the top left, you can change your avatar. At the bottom, you'll find a navigation bar for Friends, Stats, and Settings.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/homescreen.PNG" alt="Home screen" />
                   </div>
@@ -178,7 +115,8 @@
 
                 <div class="tut-sub" style="margin-top: 0; padding-top: 0; border-top: none;">
                   <h4 class="tut-sub-heading">Time Controls</h4>
-                  <p>When you tap Play Online, you'll choose your time control. Games are grouped into three speed categories: Bullet (1 min, 1|1, 1|2), Blitz (3 min, 3|2, 5 min), and Rapid (10 min, 15|10, 30 min). A format like '3|2' means 3 minutes on the clock with a 2-second increment added after each move. Pick your speed and hit Play Online to get matched. Your ELO rating (the standard score for global chess rankings) is different for each speed category, and will change automatically depending on the results of your games, and the rating of your opponent.</p>
+                  <p>When you tap Play Online, you'll choose your time control. Games are grouped into three speed categories: Bullet (1 min, 1|1, 1|2), Blitz (3 min, 3|2, 5 min), and Rapid (10 min, 15|10, 30 min).  Pick your speed and hit Play Online to get matched. Your ELO rating is different for each speed category, and will change automatically depending on the results of your games, and the rating of your opponent.</p>
+                  <aside class="tut-note"><ul><li>A format like '3|2' means 3 minutes on the clock with a 2-second increment added after each move.</li> <li><b>ELO rating</b> is the standard score for global chess rankings.</li></ul></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/time-controls.PNG" alt="Time controls selection" />
                   </div>
@@ -187,6 +125,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">In Game</h4>
                   <p>Once matched, you'll see the board with both players' names, ELO ratings, and countdown timers. The status bar at the top shows whose turn it is. Tap a piece to see its legal moves highlighted, then tap on or drag to the destination square to make your move. Your move list is tracked at the bottom of the screen.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/game-start.PNG" alt="Active game board" />
                   </div>
@@ -195,6 +134,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Game Over</h4>
                   <p>When the game ends, you'll see the result — win, loss, or draw — along with how it ended (checkmate, resignation, forfeit, timeout, etc.). From here you can Analyze Game to review your moves with engine evaluation, Rematch Opponent for a rematch, or head back to the home screen.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/game-end.PNG" alt="Game over screen" />
                   </div>
@@ -202,7 +142,18 @@
 
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Game Analysis</h4>
-                  <p>The Game Analysis screen replays your game move by move with a Stockfish engine evaluation. Each move is color-coded: gray dots for book moves (moves at the start of a game that follow common starting patterns), yellow dots for good moves, green dots for great moves, blue dots for the best possible move, yellow dots for mistakes, and red dots for blunders (terrible moves). Tap any move to jump to that position and see the evaluation shift, what the best move was, and other top engine choices. This is one of the best tools you can use to learn and improve from your games.</p>
+                  <p>The Game Analysis screen replays your game move by move with a Stockfish engine evaluation. Each move is color-coded for easy identification. Tap any move to jump to that position and see the evaluation shift, what the best move was, and other top engine choices. This is one of the best tools you can use to learn and improve from your games.</p>
+                  <aside class="tut-note">
+                    <p>
+                      Each move is color-coded:<br>
+                      <span style="color: gray;">&#9679; gray dots</span> for <strong>book moves</strong> (moves at the start of a game that follow common starting patterns)<br>
+                      <span style="color: goldenrod;">&#9679; yellow dots</span> for <strong>good moves</strong><br>
+                      <span style="color: green;">&#9679; green dots</span> for <strong>great moves</strong><br>
+                      <span style="color: blue;">&#9679; blue dots</span> for the <strong>best possible move</strong><br>
+                      <span style="color: orange;">&#9679; orange dots</span> for <strong>mistakes</strong><br>
+                      <span style="color: red;">&#9679; red dots</span> for <strong>blunders</strong> (terrible moves)
+                    </p>
+                  </aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/game-analysis.PNG" alt="Game analysis screen" />
                   </div>
@@ -220,7 +171,8 @@
             </button>
             <div class="tut-body">
               <div class="tut-content">
-                <p>Play AI works just like Play Online — you pick a time control and start a game — but your opponent is ChessBot, an AI player with two difficulty levels. It's a great way to practice without the pressure of a live opponent.</p>
+                <p>Play AI works just like Play Online — you pick a time control and start a game — but your opponent is ChessBot, an AI player with three custom difficulty levels. It's a great way to practice without the pressure of a live opponent.</p>
+                <aside class="tut-note"></aside>
                 <div class="tut-img-row">
                   <img src="assets/tutorial-pics/time-controls-ai.PNG" alt="Play AI time controls" />
                 </div>
@@ -237,6 +189,7 @@
             <div class="tut-body">
               <div class="tut-content">
                 <p>The Game Modes section offers alternative ways to play. Play in Person lets you pass the phone back and forth with someone sitting next to you. Chess 960 (also known as Fischer Random) shuffles the starting positions of the back rank pieces for a fresh challenge every game.</p>
+                <aside class="tut-note"></aside>
                 <div class="tut-img-row">
                   <img src="assets/tutorial-pics/game-mode-select.PNG" alt="Game mode selection" />
                 </div>
@@ -253,10 +206,12 @@
             <div class="tut-body">
               <div class="tut-content">
                 <p>Puzzles are a type of popular single player chess game, and Overthrow Chess has over 5 million of them. A chess puzzle puts you in the middle of an ongoing game and challenges you to find the best possible move or chain of moves. There is only one correct solution to a given puzzle.</p>
+                <aside class="tut-note"></aside>
 
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Puzzle Menu</h4>
                   <p>The Puzzles section shows your current Puzzle Rating and offers two modes to choose from. Your puzzle rating is separate from your game ELO and adjusts based on how you perform.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/puzzle-mode-select.PNG" alt="Puzzle mode selection" />
                   </div>
@@ -264,7 +219,8 @@
 
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Puzzle Rush</h4>
-                  <p>Puzzle Rush throws a stream of tactical puzzles at you at your current puzzle ELO. You start with three lives (hearts) — get a puzzle wrong and you lose one. The timer is there to track how long you've taken for each puzzle. A hint button is available if you get stuck, which when activated, highlights the piece you should move next.</p>
+                  <p>Puzzle Rush throws a stream of tactical puzzles at you at your current puzzle ELO. You start with three lives (hearts) — get a puzzle wrong and you lose one. The timer is there to track how long you've taken for each puzzle.</p>
+                  <aside class="tut-note">A hint button is available if you get stuck, which when activated, highlights the piece you should move next.</aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/puzzle-rush.PNG" alt="Puzzle Rush gameplay" />
                   </div>
@@ -273,6 +229,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Random Puzzle</h4>
                   <p>Random Puzzle gives you a single position at a time in a relaxed setting. The puzzle rating tells you how hard it is. Solve it by finding the best move (or sequence of moves), use the Hint button if you need a nudge, or Skip to move on to a new one.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/puzzle-random.PNG" alt="Random puzzle screen" />
                   </div>
@@ -293,6 +250,7 @@
                 <div class="tut-sub" style="margin-top: 0; padding-top: 0; border-top: none;">
                   <h4 class="tut-sub-heading">Finding Friends</h4>
                   <p>Tap the Friends tab in the bottom navigation bar to search for other players. Your existing friends appear under My Friends, and you can search for new players by name. Tap Add Friend to send a request, and you'll see the status update to Requested until they accept.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/friend-search.PNG" alt="Friend search screen" />
                   </div>
@@ -301,6 +259,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Challenging a Friend</h4>
                   <p>Once someone is on your friends list, tap Challenge next to their name. You'll then pick a time control — the same Bullet, Blitz, and Rapid options — and hit Send Challenge. A 'Challenge Sent' banner confirms it went through. You can cancel a pending challenge at any time.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/friend-challenge.PNG" alt="Friend challenge screen" />
                     <img src="assets/tutorial-pics/challenge-time.PNG" alt="Challenge time control selection" />
@@ -319,10 +278,26 @@
             </button>
             <div class="tut-body">
               <div class="tut-content">
-                <p>The Stats tab gives you a full picture of your performance. At the top, filter by game type: All, Bullet, Blitz, or Rapid. You'll see your Average Rating and Win-Loss-Draw record, along with a rating history graph that tracks your progress over time. Below that, Completed Matches lists your recent games with the opponent, time control, and rating change for each.</p>
-                <div class="tut-img-row">
-                  <img src="assets/tutorial-pics/stats.PNG" alt="Stats and progress screen" />
+
+                <div class="tut-sub" style="margin-top: 0; padding-top: 0; border-top: none;">
+                  <h4 class="tut-sub-heading">Finding Friends</h4>
+                  <p>The Stats tab gives you a full picture of your performance. At the top, filter by game type: All, Bullet, Blitz, or Rapid. You'll see your Average Rating and Win-Loss-Draw record, along with a rating history graph that tracks your progress over time. Below that, Completed Matches lists your recent games with the opponent, time control, and rating change for each.</p>
+                  <aside class="tut-note"></aside>
+                  <div class="tut-img-row">
+                    <img src="assets/tutorial-pics/stats.PNG" alt="Stats and progress screen" />
+                    <img src="assets/tutorial-pics/stats2.PNG" alt="Stats and progress screen 2" />
+                  </div>
                 </div>
+
+                <div class="tut-sub">
+                  <h4 class="tut-sub-heading">Leaderboards</h4>
+                  <p>From the stats screen, you can access a leaderboard for each time control type. Check the Leaderboards to see how you rank against other players globally.</p>
+                  <aside class="tut-note"></aside>
+                  <div class="tut-img-row">
+                    <img src="assets/tutorial-pics/leaderboard.PNG" alt="Leaderboard screen" />
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -339,6 +314,7 @@
                 <div class="tut-sub" style="margin-top: 0; padding-top: 0; border-top: none;">
                   <h4 class="tut-sub-heading">Settings Overview</h4>
                   <p>The Settings tab lets you manage your account and preferences. From here you can access Customization (avatar and board themes), Voice Chat settings, and Sound controls. There's also a Sign Out option under the Danger Zone.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/settings.PNG" alt="Settings screen" />
                   </div>
@@ -347,6 +323,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Edit Display Name</h4>
                   <p>Tap your Display Name to change what other players see. Type in your new name and hit Save.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/edit-name.PNG" alt="Edit display name screen" />
                   </div>
@@ -355,6 +332,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Avatar Customization</h4>
                   <p>Under Customization, you can pick an Avatar from any chess piece — white or black, pawn through king. Your avatar appears next to your name on the home screen, in friend lists, and during games.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/avatar-customization.PNG" alt="Avatar customization screen" />
                   </div>
@@ -363,6 +341,7 @@
                 <div class="tut-sub">
                   <h4 class="tut-sub-heading">Board Themes</h4>
                   <p>You can also swap your Board Theme to change the look of every game and puzzle. Choose from themes like Classic, Cherry Blossom, Sunset Orange, Midnight, Arctic Frost, Lavender Mist, and more. The preview updates in real time so you can see exactly how your games will look.</p>
+                  <aside class="tut-note"></aside>
                   <div class="tut-img-row">
                     <img src="assets/tutorial-pics/board-customization.PNG" alt="Board theme selection" />
                     <img src="assets/tutorial-pics/board-customization2.PNG" alt="Board theme preview" />

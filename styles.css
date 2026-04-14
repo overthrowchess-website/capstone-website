@@ -21,6 +21,9 @@
   --radius: 16px;
   --radius-lg: 24px;
   --maxw: 1100px;
+  --note-color: #fbbf24;               /* amber — change this one value to retheme every note */
+  --note-bg: rgba(251, 191, 36, 0.05);
+  --note-border: rgba(251, 191, 36, 0.30);
   --font-display: "Syne", "Avenir Next", sans-serif;
   --font-body: "Inter Tight", "Avenir Next", system-ui, sans-serif;
 }
@@ -915,6 +918,8 @@ section {
   position: relative;
 }
 
+
+
 .tut-deep-dive::before {
   content: "";
   position: absolute;
@@ -1027,11 +1032,40 @@ section {
 }
 
 .tut-img-row img {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border);
+}
+
+/* ========================================
+   Tutorial inline notes
+   ======================================== */
+.tut-note {
+  border-left: 2px solid var(--note-border);
+  border-radius: 0 8px 8px 0;
+  background: var(--note-bg);
+  padding: 10px 14px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.6);
+  line-height: 1.65;
+}
+
+.tut-note:empty {
+  display: none;
+}
+
+.tut-note::before {
+  content: "Note";
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--note-color);
+  margin-bottom: 5px;
 }
 
 /* ========================================
