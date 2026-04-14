@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="460" viewBox="0 0 1180 460" role="img" aria-label="Overthrow Chess architecture diagram">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" role="img" aria-label="Overthrow Chess architecture diagram">
 
   <defs>
     <marker id="ah" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
@@ -7,16 +7,23 @@
     <marker id="ah2" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
       <path d="M0,0.5 L0,6.5 L6,3.5 Z" fill="rgba(251,146,60,0.45)"/>
     </marker>
+    <marker id="ah3" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+      <path d="M0,0.5 L0,6.5 L6,3.5 Z" fill="rgba(139,92,246,0.8)"/>
+    </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="1180" height="460" fill="#101010" rx="14"/>
+  <rect width="1180" height="560" fill="#101010" rx="14"/>
 
   <!-- Section group backgrounds -->
-  <rect x="16" y="44" width="204" height="372" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
-  <rect x="248" y="44" width="262" height="372" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
-  <rect x="538" y="44" width="226" height="372" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
-  <rect x="792" y="44" width="372" height="372" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
+  <!-- CLIENTS -->
+  <rect x="16" y="44" width="204" height="472" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
+  <!-- BACKEND -->
+  <rect x="248" y="44" width="262" height="472" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
+  <!-- STORAGE -->
+  <rect x="538" y="44" width="226" height="472" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
+  <!-- ANALYSIS + RELAY (taller to fit 3 cards) -->
+  <rect x="792" y="44" width="372" height="472" rx="11" fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.065)" stroke-width="1"/>
 
   <!-- Section labels -->
   <text x="118" y="67" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="rgba(255,255,255,0.27)" font-weight="700" letter-spacing="0.13em">CLIENTS</text>
@@ -62,17 +69,32 @@
   <text x="651" y="317" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Session state</text>
   <text x="651" y="334" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Matchmaking queues</text>
 
-  <!-- Stockfish -->
-  <rect x="808" y="104" width="340" height="96" rx="10" fill="#1b1b1b" stroke="rgba(255,255,255,0.085)" stroke-width="1"/>
-  <text x="978" y="144" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#f0f0f0">Stockfish</text>
-  <text x="978" y="163" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Post-game evaluation</text>
-  <text x="978" y="180" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Move classification pipeline</text>
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ANALYSIS + RELAY — 3 cards             -->
+  <!-- ═══════════════════════════════════════ -->
 
-  <!-- coturn -->
-  <rect x="808" y="258" width="340" height="96" rx="10" fill="#1b1b1b" stroke="rgba(255,255,255,0.085)" stroke-width="1"/>
-  <text x="978" y="298" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#f0f0f0">coturn / WebRTC</text>
-  <text x="978" y="317" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">STUN/TURN relay</text>
-  <text x="978" y="334" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Voice chat signaling</text>
+  <!-- Stockfish (top) -->
+  <rect x="808" y="84" width="340" height="100" rx="10" fill="#1b1b1b" stroke="rgba(255,255,255,0.085)" stroke-width="1"/>
+  <text x="978" y="124" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#f0f0f0">Stockfish</text>
+  <text x="978" y="143" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Post-game evaluation</text>
+  <text x="978" y="160" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Move classification pipeline</text>
+
+  <!-- LightGBM (middle) -->
+  <rect x="808" y="216" width="340" height="116" rx="10" fill="#1b1b1b" stroke="rgba(255,255,255,0.085)" stroke-width="1"/>
+  <text x="978" y="256" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#f0f0f0">LightGBM</text>
+  <text x="978" y="275" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Move quality classifier</text>
+  <text x="978" y="292" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Stockfish eval + player data</text>
+  <text x="978" y="309" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Custom-trained model</text>
+
+  <!-- coturn (bottom) -->
+  <rect x="808" y="364" width="340" height="100" rx="10" fill="#1b1b1b" stroke="rgba(255,255,255,0.085)" stroke-width="1"/>
+  <text x="978" y="404" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#f0f0f0">coturn / WebRTC</text>
+  <text x="978" y="423" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">STUN/TURN relay</text>
+  <text x="978" y="440" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11.5" fill="rgba(255,255,255,0.4)">Voice chat signaling</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ARROWS                                 -->
+  <!-- ═══════════════════════════════════════ -->
 
   <!-- PRIMARY ARROWS (solid orange) -->
   <!-- iOS → Go API -->
@@ -84,10 +106,13 @@
   <!-- Game Server → Redis -->
   <line x1="494" y1="312" x2="552" y2="312" stroke="#fb923c" stroke-width="2" marker-end="url(#ah)"/>
 
-  <!-- SECONDARY ARROWS (dashed, through gap between storage boxes) -->
-  <!-- Game Server → Stockfish (routes through gap at y≈216) -->
-  <polyline points="494,282 556,282 556,216 790,216 790,152 806,152" fill="none" stroke="rgba(251,146,60,0.42)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#ah2)"/>
-  <!-- Game Server → coturn (routes through gap at y≈246) -->
-  <polyline points="494,342 556,342 556,246 790,246 790,306 806,306" fill="none" stroke="rgba(251,146,60,0.42)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#ah2)"/>
+  <!-- SECONDARY ARROWS (dashed orange) -->
+  <!-- Game Server → Stockfish -->
+  <polyline points="494,282 556,282 556,200 790,200 790,134 806,134" fill="none" stroke="rgba(251,146,60,0.42)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#ah2)"/>
+  <!-- Game Server → coturn -->
+  <polyline points="494,342 556,342 556,390 790,390 790,414 806,414" fill="none" stroke="rgba(251,146,60,0.42)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#ah2)"/>
+
+  <!-- Stockfish → LightGBM -->
+  <line x1="978" y1="184" x2="978" y2="214" stroke="#fb923c" stroke-width="2" marker-end="url(#ah)"/>
 
 </svg>
