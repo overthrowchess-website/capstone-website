@@ -796,6 +796,11 @@ section {
   gap: 20px;
 }
 
+.support-grid {
+  grid-template-columns: minmax(280px, 560px);
+  justify-content: center;
+}
+
 .dl-card {
   border-radius: var(--radius-lg);
   padding: 36px;
