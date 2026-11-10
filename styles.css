@@ -148,6 +148,24 @@ code {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0a0a0a;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+}
+
 /* Mobile hamburger — hidden, links shown inline instead */
 .nav-toggle {
   display: none;
@@ -1201,6 +1219,7 @@ footer {
   .container { padding: 0 16px; }
 
   .brand span { display: none; }
+  .nav-cta { display: none; }
   .nav-links a { padding: 6px 8px; font-size: 12px; }
 
   .features { grid-template-columns: 1fr; }
